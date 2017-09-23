@@ -13,10 +13,10 @@
 <!-- This is where the data is updated to the window -->
 <div class="container">
     <div class="col-md-6">
-        <ul>
+        <ul class="list-group">
             {{#each burgers}}
                 {{#unless this.devoured}}
-                <li>
+                <li "list-group-item list-group-item-success">
                     {{this.burger_name}}
 
                     <form action="/{{this.id}}?_method=PUT" method="POST">
@@ -29,10 +29,10 @@
         </ul>
     </div>
     <div class="col-md-6">
-        <ul>
+        <ul class="list-group">
         {{#each burgers}}
             {{#if this.devoured}}
-            <li>
+            <li "list-group-item list-group-item-danger">
                 {{this.burger_name}}
 
                 <form action="/{{this.id}}?_method=PUT" method="POST">
