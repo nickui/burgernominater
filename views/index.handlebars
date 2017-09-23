@@ -21,7 +21,7 @@
 
                     <form action="/{{this.id}}?_method=PUT" method="POST">
                     <input type="hidden" name="devoured" value="true">
-                    <button type="submit">Om Nom Nom!</button>
+                    <button class="form-control" type="submit">Om Nom Nom!</button>
                     </form>
                 </li>
                 {{/unless}}
@@ -37,7 +37,7 @@
 
                 <form action="/{{this.id}}?_method=PUT" method="POST">
                 <input type="hidden" name="devoured" value="false">
-                <button type="submit">Give Me More!</button>
+                <button class="form-control" type="submit">Give Me More!</button>
                 </form>
             </li>
             {{/if}}
@@ -51,9 +51,9 @@
 
     <div class="form-group">
         <label for="burg">Burger:</label>
-        <input type="text" id="burg" name="name" placeholder="Type in your burger name here...!">
+        <input class="form-control" type="text" id="burg" name="name" placeholder="Type in your burger name here...!">
     </div>
 
-    <button type="submit">Submit!</button>
+    <button class="form-control" type="submit">Submit!</button>
 
 </form>
