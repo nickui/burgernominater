@@ -2,7 +2,7 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    //port: 3306,
+    port: 3306, //not sure if this needs to be set
     host: "us-cdbr-iron-east-05.cleardb.net",
     user: "ba0cf03fcf7397",
     password: "6c19e758",
