@@ -17,7 +17,7 @@
             {{#each burgers}}
                 {{#unless this.devoured}}
                 <li class="list-group-item list-group-item-success">
-                    {{this.burger_name}}
+                    <h3>{{this.burger_name}}</h3>
 
                     <form action="/{{this.id}}?_method=PUT" method="POST">
                     <input type="hidden" name="devoured" value="true">
@@ -33,7 +33,7 @@
         {{#each burgers}}
             {{#if this.devoured}}
             <li class="list-group-item list-group-item-danger">
-                {{this.burger_name}}
+                <h3>{{this.burger_name}}</h3>
 
                 <form action="/{{this.id}}?_method=PUT" method="POST">
                 <input type="hidden" name="devoured" value="false">
@@ -50,7 +50,7 @@
 <form class="create-update-form" action="/" method="POST">
 
     <div class="form-group">
-        <label class="form-control-label" for="burg">Burger:</label>
+        <label class="form-control-label" for="burg"><h3>The Next Burger:</h3></label>
         <input class="form-control" type="text" id="burg" name="name" placeholder="Type in your burger name here...!">
     </div>
 
