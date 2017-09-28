@@ -2,7 +2,7 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    port: 3306, //not sure if this needs to be set
+    //port: 3306, //not sure if this needs to be set
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password:process.env.DB_PASS,
